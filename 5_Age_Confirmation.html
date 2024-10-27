@@ -1,0 +1,41 @@
+<!-- Otherwise it asks for a confirmation and returns its
+result: function checkAge(age)
+{
+else
+{
+}
+}
+if (age> 18) { return true; }
+// ...return confirm (‘did parents allow you?') -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+function checkAge(age) {
+if (age > 18) {
+  return true;
+} 
+else {
+  return confirm('Did parents allow you?');
+}
+}
+
+let age = prompt('Your Age','');
+
+if(checkAge(age)) {
+  alert('Access Granted');
+}
+else{
+  alert('Access denied')
+}
+
+  </script>
+</body>
+</html>
